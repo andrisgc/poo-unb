@@ -3,14 +3,14 @@ public class Principal {
         Circulo circulo = new Circulo(10, "mm");
         Cilindro cilindro = new Cilindro(circulo, new Medida(100, "mm"));
 
-        System.out.println(circulo.calcularArea());
+        circulo.calcularArea();
         System.out.println(circulo.area.getValor());
-        System.out.println(circulo.calcularPerimetro());
+        circulo.calcularPerimetro();
         System.out.println(circulo.perimetro.getValor());
 
-        System.out.println(cilindro.calcularAreaSuperficie());
+        cilindro.calcularAreaSuperficie();
         System.out.println(cilindro.areaSuperficie.getValor());
-        System.out.println(cilindro.calcularVolume());
+        cilindro.calcularVolume();
         System.out.println(cilindro.volume.getValor());
     }
 }
